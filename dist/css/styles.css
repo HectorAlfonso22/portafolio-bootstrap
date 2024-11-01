@@ -103,6 +103,39 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+header h1{
+  color: white;
+}
+.foto-perfil{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.custom-button {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none;
+  color: white; /* Color del texto */
+  padding: 15px 30px; /* Tamaño del botón */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px; /* Bordes redondeados */
+  transition: all 1s ease; /* Transición suave */
+}
+
+/* Efecto hover */
+.custom-button:hover {
+  background-color: #45a049; /* Color al hacer hover */
+  transform: scale(1.05); /* Agranda ligeramente el botón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+}
+
+/* Efecto active */
+.custom-button:active {
+  transform: scale(0.98); /* Reduce ligeramente el tamaño */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+}
 
 hr {
   margin: 1rem 0;
@@ -117,10 +150,12 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
+
 }
 
 h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(1.375rem + 1.5vw);  
+
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -245,7 +280,7 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: var(--bs-accordion-btn-color);
   text-decoration: underline;
 }
 a:hover {
@@ -10959,7 +10994,7 @@ html {
 
 .callout {
   padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("https://res.cloudinary.com/dpv9jzbfs/image/upload/v1730394402/DALL_E_2024-10-31_14.06.18_-_A_minimalistic_background_image_with_a_technology_theme_in_cool_blue_tones._Simple_lines_and_geometric_shapes_represent_digital_circuits_and_network_c_ll5you.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11014,7 +11049,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("https://res.cloudinary.com/dpv9jzbfs/image/upload/v1730398425/DALL_E_2024-10-31_15.13.11_-_A_minimalistic_background_image_with_a_dark_blue_color_scheme_featuring_small_simple_line_icons_of_technology_items_such_as_computers_network_symbo_yj6mlo.webp");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11107,4 +11142,33 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.custom-button {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: #5a53e6;
+    transform: scale(1.05);
+}
+
+.custom-button:active {
+    transform: scale(0.98);
+}
+
+.footer .social-link {
+    font-size: 1.5rem;
+    color: #6c63ff;
+    transition: color 0.3s ease;
+}
+
+.footer .social-link:hover {
+    color: #5a53e6;
 }
